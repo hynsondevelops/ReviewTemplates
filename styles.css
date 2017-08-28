@@ -1,0 +1,70 @@
+body
+{
+	background-color: rgb(43, 146, 160);
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.review
+{
+	background-color: #FF8141;
+	margin: 20px;
+	display: inline-block;
+}
+
+textarea
+{
+	background-color: #FF8141;
+}
+#formL1
+{
+	background-color: #FFB041;
+	display: block;
+	border: 1px black solid;
+	height: 180px;
+	width: 610px;
+}
+
+
+#name
+{
+	margin-left: 5px;
+	float: left;
+	height: 100px;
+	width: 200px;
+
+}
+
+
+#gender
+{
+	float: left;
+	margin: 2px;
+	height: 100px;
+	width: 130px;
+}
+
+
+#level
+{
+	margin: 2px;
+	float: left;
+	height: 100px;
+	width: 250px;
+}
+
+#generateButton
+{	
+	margin-left: 25px;
+	background-color: #FF8141;
+	height: 60px;
+	width: 120px;
+}
+
+#displayButton
+{	
+	margin-left: 50px;
+	background-color: #FF8141;
+	height: 60px;
+	width: 120px;
+}
