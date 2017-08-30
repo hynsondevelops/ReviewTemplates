@@ -1,26 +1,26 @@
-//Replace what is in the single quotes with the content for previp trial
-var contentPreVIPTrial = ['Content PreVIP Trial']
+	//Replace what is in the single quotes with the content for previp trial
+var contentPreVIPTrial = 'It was so nice to meet name today! He is a hard working student. He speaks very well! He could repeat all of the words and letters. He is young and learning this type of classroom. I am impressed at how quickly name learns! The teachers here are all kind and friendly. He will feel comfortable to learn English.  Excellent 5 star job! I think with practice in this type of setting, name will rapidly advance in the program. I think starting at a young age gives name a big advantage. name is an excellent candidate for VIPKID.'
 
 //Replace what is in the single quotes with the content for nonreader trial
-var contentNonreaderTrial = ['Content Nonreader Trial']
+var contentNonreaderTrial = 'It was so nice to meet name today! He is a hard working student. He speaks very well! He could repeat all of the words and letters. He is young and learning this type of classroom. I am impressed at how quickly name learns! The teachers here are all kind and friendly. He will feel comfortable to learn English. Excellent 5 star job! I think with practice in this type of setting, he will rapidly advance in the program. I think starting at a young age is a big advantage. name is an excellent candidate for VIPKID. Excellent 5 star job!'
 
 //Replace what is in the single quotes with the content for reader trial
-var contentReaderTrial = ['Content Reader Trial']
+var contentReaderTrial = 'It was so nice to meet name today! He is a hard working student. name speaks very well! He could repeat all of the words and sentences. name did a good job with reading. Practice speaking with a native speaker will help name make fast progress with pronunciation. The teachers here are all kind and friendly. He will feel comfortable to expand on already good English. Excellent 5 star job! I think with practice in this type of setting he will rapidly advance in the program. name is an excellent candidate for VIPKID. Excellent 5 star job!'
 
 //Replace what is in the single quotes with the content for MC previp
-var contentMCPreVIP = ['Content Level 1']
+var contentMCPreVIP = 'It is nice to meet adorable name. He participates fully in class. He can practice putting "a" in front of nouns. "I see a cat". name knows all of the letters and can match big to small. He can put together sentences with the help of the teacher. "I draw a line. I love Dino". name sang three songs today!! Great 5 happy star job today.'
 
 //Replace what is in the single quotes with the content for level 1
-var contentLevel1 = ['Content Level 1']
+var contentLevel1 = 'It is nice to meet adorable name. He participates fully in class. name can practice putting "a" in front of nouns. "I see a cat". name knows all of the letters and can match big to small. He can put together sentences with the help of the teacher. " I draw a line. I love Dino". He sang three songs today!! Great 5 happy star job today.'
 
 //Replace what is in the single quotes with the content for level 2
-var contentLevel2 = ['Content Level 2']
+var contentLevel2 = 'It was very nice to see name today! He is progressing well in understanding English. He could say and read everything very well!. Excellent job. When working at home, name could underline the first letter of words in the workbook to help associate letters in addition to pictures with the words. This will help with reading. Excellent 5 happy stars today! Keep working hard name!'
 
 //Replace what is in the single quotes with the content for level 3
-var contentLevel3 = ['Content Level 3']
+var contentLevel3 = 'It was very nice to see name today! name is a wonderful speaker! He knows all of the lesson vocabulary. He can deepen English language understanding with conversation which name did so well today. Great work with all of the grammar and vocabulary too! He can speak in full sentences. He answered lots of questions. name did a good job correcting errors when encouraged. Overall a great job--5 happy stars today!'
 
 //Replace what is in the single quotes with the content for level 4
-var contentLevel4 = ['Content Level 4']
+var contentLevel4 = 'name is a wonderful reader. Wow - name is reading so fast. He also knows all of the vocabulary very well. He can deepen English language understanding with conversation which name did so well today. He answered lots of questions and used complete sentences in the answers. name could practice reading aloud between lessons to help with fluency.  So nice to see name today. 5 super stars!'
 
 //Replace what is in the single quotes with the content for level 5
 var contentLevel5 = ['Content Level 5']
@@ -57,6 +57,11 @@ var sampleSentencesTrial = ['It was so nice to meet you today.', 'boy is a hardw
 
 function generateReview(gender, name, content)
 {
+	content = content.replace(/name/g, name)
+	if (gender == 'She')
+	{
+		content = content.replace(/He/g, 'She')
+	}
 	var review = content + endingSentences
 	var premadesDiv = document.getElementById('premades')
 	var reviewString = "<div class = 'review'><textarea rows='7' cols='90'>" + review + "</textarea></div>"
