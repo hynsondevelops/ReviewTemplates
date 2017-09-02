@@ -1,4 +1,6 @@
-	//Replace what is in the single quotes with the content for previp trial
+//name -> info in name field
+//He -> He or She depending on gender field
+//Replace what is in the single quotes with the content for previp trial
 var contentPreVIPTrial = 'It was so nice to meet name today! He is a hard working student. He speaks very well! He could repeat all of the words and letters. He is young and learning this type of classroom. I am impressed at how quickly name learns! The teachers here are all kind and friendly. He will feel comfortable to learn English.  Excellent 5 star job! I think with practice in this type of setting, name will rapidly advance in the program. I think starting at a young age gives name a big advantage. name is an excellent candidate for VIPKID.'
 
 //Replace what is in the single quotes with the content for nonreader trial
@@ -23,10 +25,25 @@ var contentLevel3 = 'It was very nice to see name today! name is a wonderful spe
 var contentLevel4 = 'name is a wonderful reader. Wow - name is reading so fast. He also knows all of the vocabulary very well. He can deepen English language understanding with conversation which name did so well today. He answered lots of questions and used complete sentences in the answers. name could practice reading aloud between lessons to help with fluency.  So nice to see name today. 5 super stars!'
 
 //Replace what is in the single quotes with the content for level 5
-var contentLevel5 = ['Content Level 5']
+var contentLevel5 = 'Content Level 5'
 
 //Replace what is in the single quotes with the content for level 6
-var contentLevel6 = ['Content Level 6']
+var contentLevel6 = 'Content Level 6'
+
+var contentLevelUA1 = 'Content Level UA 1'
+
+var contentLevelUA2 = 'Content Level UA 1'
+
+var contentLevelUA3 = 'Content Level UA 1'
+
+var contentLevelUA4 = 'Content Level UA 1'
+
+var contentLevelUA5 = 'Content Level UA 1'
+
+var contentLevelUA6 = 'Content Level UA 1'
+
+var contentLevelUAPreVIP = 'Content Level UA 1'
+
 
 var endingSentences = ['See you again soon!']
 
@@ -151,6 +168,28 @@ function display()
 		case '10':
 			generateReview(form.gender.value, form.name.value, contentMCPreVIP);
 			break;
+		case '11':
+			generateReview(form.gender.value, form.name.value, contentLevelUAPreVIP);
+			break;
+		case '12':
+			generateReview(form.gender.value, form.name.value, contentLevelUA1);
+			break;
+		case '13':
+			generateReview(form.gender.value, form.name.value, contentLevelUA2);
+			break;
+		case '14':
+			generateReview(form.gender.value, form.name.value, contentLevelUA3);
+			break;
+		case '15':
+			generateReview(form.gender.value, form.name.value, contentLevelUA4);
+			break;
+		case '16':
+			generateReview(form.gender.value, form.name.value, contentLevelUA5);
+			break;
+		case '17':
+			generateReview(form.gender.value, form.name.value, contentLevelUA6);
+			break;
+
 		default:
 			//createRandomizedReview(form.gender.value, form.name.value, endingSentences);
 			break;

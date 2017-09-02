@@ -21,7 +21,7 @@ textarea
 	background-color: #FFB041;
 	display: block;
 	border: 1px black solid;
-	height: 180px;
+	height: 280px;
 	width: 610px;
 }
 
@@ -55,6 +55,7 @@ textarea
 
 #generateButton
 {	
+	margin-top: 40px;
 	margin-left: 25px;
 	background-color: #FF8141;
 	height: 60px;
